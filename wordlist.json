@@ -1,0 +1,554 @@
+[
+    {
+        "ja": "寿司",
+        "ro": "sushi"
+    },
+    {
+        "ja": "鮪",
+        "ro": "maguro"
+    },
+    {
+        "ja": "サーモン",
+        "ro": "sa-mon"
+    },
+    {
+        "ja": "いくら",
+        "ro": "ikura"
+    },
+    {
+        "ja": "たまご",
+        "ro": "tamago"
+    },
+    {
+        "ja": "海老",
+        "ro": "ebi"
+    },
+    {
+        "ja": "いか",
+        "ro": "ika"
+    },
+    {
+        "ja": "たこ",
+        "ro": "tako"
+    },
+    {
+        "ja": "うに",
+        "ro": "uni"
+    },
+    {
+        "ja": "あなご",
+        "ro": "anago"
+    },
+    {
+        "ja": "わさび",
+        "ro": "wasabi"
+    },
+    {
+        "ja": "がり",
+        "ro": "gari"
+    },
+    {
+        "ja": "醤油",
+        "ro": "shouyu"
+    },
+    {
+        "ja": "お茶",
+        "ro": "ocha"
+    },
+    {
+        "ja": "ねぎとろ",
+        "ro": "negitoro"
+    },
+    {
+        "ja": "甘海老",
+        "ro": "amaebi"
+    },
+    {
+        "ja": "帆立",
+        "ro": "hotate"
+    },
+    {
+        "ja": "鯵",
+        "ro": "aji"
+    },
+    {
+        "ja": "鯖",
+        "ro": "saba"
+    },
+    {
+        "ja": "鰯",
+        "ro": "iwashi"
+    },
+    {
+        "ja": "鰹",
+        "ro": "katsuo"
+    },
+    {
+        "ja": "鰤",
+        "ro": "buri"
+    },
+    {
+        "ja": "鯛",
+        "ro": "tai"
+    },
+    {
+        "ja": "平目",
+        "ro": "hirame"
+    },
+    {
+        "ja": "鰻",
+        "ro": "unagi"
+    },
+    {
+        "ja": "鉄火巻",
+        "ro": "tekkamaki"
+    },
+    {
+        "ja": "かっぱ巻",
+        "ro": "kappamaki"
+    },
+    {
+        "ja": "納豆巻",
+        "ro": "nattoumaki"
+    },
+    {
+        "ja": "かんぴょう巻",
+        "ro": "kanpyoumaki"
+    },
+    {
+        "ja": "とろ",
+        "ro": "toro"
+    },
+    {
+        "ja": "中とろ",
+        "ro": "chuutoro"
+    },
+    {
+        "ja": "大とろ",
+        "ro": "ootoro"
+    },
+    {
+        "ja": "赤貝",
+        "ro": "akagai"
+    },
+    {
+        "ja": "つぶ貝",
+        "ro": "tsubugai"
+    },
+    {
+        "ja": "数の子",
+        "ro": "kazunoko"
+    },
+    {
+        "ja": "しめ鯖",
+        "ro": "shimesaba"
+    },
+    {
+        "ja": "こはだ",
+        "ro": "kohada"
+    },
+    {
+        "ja": "しゃこ",
+        "ro": "shako"
+    },
+    {
+        "ja": "かに",
+        "ro": "kani"
+    },
+    {
+        "ja": "いなり",
+        "ro": "inari"
+    },
+    {
+        "ja": "ラーメン",
+        "ro": "ra-men"
+    },
+    {
+        "ja": "うどん",
+        "ro": "udon"
+    },
+    {
+        "ja": "そば",
+        "ro": "soba"
+    },
+    {
+        "ja": "天ぷら",
+        "ro": "tenpura"
+    },
+    {
+        "ja": "焼き鳥",
+        "ro": "yakitori"
+    },
+    {
+        "ja": "牛丼",
+        "ro": "gyuudon"
+    },
+    {
+        "ja": "カレーライス",
+        "ro": "kare-raisu"
+    },
+    {
+        "ja": "お好み焼き",
+        "ro": "okonomiyaki"
+    },
+    {
+        "ja": "たこ焼き",
+        "ro": "takoyaki"
+    },
+    {
+        "ja": "しゃぶしゃぶ",
+        "ro": "shabushabu"
+    },
+    {
+        "ja": "すき焼き",
+        "ro": "sukiyaki"
+    },
+    {
+        "ja": "味噌汁",
+        "ro": "misoshiru"
+    },
+    {
+        "ja": "漬物",
+        "ro": "tsukemono"
+    },
+    {
+        "ja": "枝豆",
+        "ro": "edamame"
+    },
+    {
+        "ja": "冷奴",
+        "ro": "hiyayakko"
+    },
+    {
+        "ja": "餃子",
+        "ro": "gyouza"
+    },
+    {
+        "ja": "唐揚げ",
+        "ro": "karaage"
+    },
+    {
+        "ja": "刺身",
+        "ro": "sashimi"
+    },
+    {
+        "ja": "日本酒",
+        "ro": "nihonshu"
+    },
+    {
+        "ja": "ビール",
+        "ro": "bi-ru"
+    },
+    {
+        "ja": "焼酎",
+        "ro": "shouchuu"
+    },
+    {
+        "ja": "梅酒",
+        "ro": "umeshu"
+    },
+    {
+        "ja": "緑茶",
+        "ro": "ryokucha"
+    },
+    {
+        "ja": "ほうじ茶",
+        "ro": "houjicha"
+    },
+    {
+        "ja": "抹茶",
+        "ro": "matcha"
+    },
+    {
+        "ja": "水",
+        "ro": "mizu"
+    },
+    {
+        "ja": "コーラ",
+        "ro": "ko-ra"
+    },
+    {
+        "ja": "ジュース",
+        "ro": "ju-su"
+    },
+    {
+        "ja": "コーヒー",
+        "ro": "ko-hi-"
+    },
+    {
+        "ja": "紅茶",
+        "ro": "koucha"
+    },
+    {
+        "ja": "デザート",
+        "ro": "deza-to"
+    },
+    {
+        "ja": "アイスクリーム",
+        "ro": "aisukuri-mu"
+    },
+    {
+        "ja": "ケーキ",
+        "ro": "ke-ki"
+    },
+    {
+        "ja": "プリン",
+        "ro": "purin"
+    },
+    {
+        "ja": "果物",
+        "ro": "kudamono"
+    },
+    {
+        "ja": "苺",
+        "ro": "ichigo"
+    },
+    {
+        "ja": "林檎",
+        "ro": "ringo"
+    },
+    {
+        "ja": "蜜柑",
+        "ro": "mikan"
+    },
+    {
+        "ja": "葡萄",
+        "ro": "budou"
+    },
+    {
+        "ja": "西瓜",
+        "ro": "suika"
+    },
+    {
+        "ja": "桃",
+        "ro": "momo"
+    },
+    {
+        "ja": "梨",
+        "ro": "nashi"
+    },
+    {
+        "ja": "柿",
+        "ro": "kaki"
+    },
+    {
+        "ja": "桜",
+        "ro": "sakura"
+    },
+    {
+        "ja": "紅葉",
+        "ro": "momiji"
+    },
+    {
+        "ja": "富士山",
+        "ro": "fujisan"
+    },
+    {
+        "ja": "東京",
+        "ro": "toukyou"
+    },
+    {
+        "ja": "京都",
+        "ro": "kyouto"
+    },
+    {
+        "ja": "大阪",
+        "ro": "oosaka"
+    },
+    {
+        "ja": "北海道",
+        "ro": "hokkaidou"
+    },
+    {
+        "ja": "沖縄",
+        "ro": "okinawa"
+    },
+    {
+        "ja": "侍",
+        "ro": "samurai"
+    },
+    {
+        "ja": "忍者",
+        "ro": "ninja"
+    },
+    {
+        "ja": "芸者",
+        "ro": "geisha"
+    },
+    {
+        "ja": "着物",
+        "ro": "kimono"
+    },
+    {
+        "ja": "浴衣",
+        "ro": "yukata"
+    },
+    {
+        "ja": "温泉",
+        "ro": "onsen"
+    },
+    {
+        "ja": "祭り",
+        "ro": "matsuri"
+    },
+    {
+        "ja": "花火",
+        "ro": "hanabi"
+    },
+    {
+        "ja": "神社",
+        "ro": "jinja"
+    },
+    {
+        "ja": "お寺",
+        "ro": "otera"
+    },
+    {
+        "ja": "城",
+        "ro": "shiro"
+    },
+    {
+        "ja": "庭園",
+        "ro": "teien"
+    },
+    {
+        "ja": "漫画",
+        "ro": "manga"
+    },
+    {
+        "ja": "アニメ",
+        "ro": "anime"
+    },
+    {
+        "ja": "カラオケ",
+        "ro": "karaoke"
+    },
+    {
+        "ja": "電車",
+        "ro": "densha"
+    },
+    {
+        "ja": "新幹線",
+        "ro": "shinkansen"
+    },
+    {
+        "ja": "飛行機",
+        "ro": "hikouki"
+    },
+    {
+        "ja": "自動車",
+        "ro": "jidousha"
+    },
+    {
+        "ja": "自転車",
+        "ro": "jitensha"
+    },
+    {
+        "ja": "こんにちは",
+        "ro": "konnichiha"
+    },
+    {
+        "ja": "ありがとう",
+        "ro": "arigatou"
+    },
+    {
+        "ja": "さようなら",
+        "ro": "sayounara"
+    },
+    {
+        "ja": "おはよう",
+        "ro": "ohayou"
+    },
+    {
+        "ja": "こんばんは",
+        "ro": "konbanha"
+    },
+    {
+        "ja": "おやすみ",
+        "ro": "oyasumi"
+    },
+    {
+        "ja": "すみません",
+        "ro": "sumimasen"
+    },
+    {
+        "ja": "ごめんなさい",
+        "ro": "gomennasai"
+    },
+    {
+        "ja": "いただきます",
+        "ro": "itadakimasu"
+    },
+    {
+        "ja": "ごちそうさま",
+        "ro": "gochisousama"
+    },
+    {
+        "ja": "はい",
+        "ro": "hai"
+    },
+    {
+        "ja": "いいえ",
+        "ro": "iie"
+    },
+    {
+        "ja": "日本",
+        "ro": "nihon"
+    },
+    {
+        "ja": "日本語",
+        "ro": "nihongo"
+    },
+    {
+        "ja": "英語",
+        "ro": "eigo"
+    },
+    {
+        "ja": "学校",
+        "ro": "gakkou"
+    },
+    {
+        "ja": "会社",
+        "ro": "kaisha"
+    },
+    {
+        "ja": "仕事",
+        "ro": "shigoto"
+    },
+    {
+        "ja": "友達",
+        "ro": "tomodachi"
+    },
+    {
+        "ja": "家族",
+        "ro": "kazoku"
+    },
+    {
+        "ja": "家",
+        "ro": "ie"
+    },
+    {
+        "ja": "部屋",
+        "ro": "heya"
+    },
+    {
+        "ja": "猫",
+        "ro": "neko"
+    },
+    {
+        "ja": "犬",
+        "ro": "inu"
+    },
+    {
+        "ja": "魚",
+        "ro": "sakana"
+    },
+    {
+        "ja": "鳥",
+        "ro": "tori"
+    },
+    {
+        "ja": "花",
+        "ro": "hana"
+    }
+]

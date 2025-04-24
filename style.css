@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Enhance the background gradient for a more 'luxurious' feel */
+    background: radial-gradient(ellipse at bottom, #f3e5ab 0%, #e2d1c3 100%);
+    /* Alternative: Subtle pattern (requires an image or SVG) */
+    /* background-image: url('path/to/subtle-pattern.png'); */
+    font-family: sans-serif;
+    overflow: hidden;
+    /* Hide scrollbars caused by off-screen sushi */
+    /* Add transition for smooth background changes if needed by effects */
+    transition: background 0.2s ease-in-out;
+}
+
+/* Class for mistake feedback */
+body.mistake-flash {
+    background-color: #ffdddd !important;
+    /* Use important to override gradient temporarily */
+    background: #ffdddd !important;
+}
+
+#game-container {
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* Needed for absolute positioning of sushi */
+    overflow: hidden;
+    /* Keep sushi within the container */
+    padding-top: 50px;
+    /* Add padding for stats bar */
+    /* Ensure shake animation works correctly */
+    position: relative;
+}
+
+#stats-bar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    z-index: 10;
+}
+
+#info-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    /* Adjust margin */
+}
+
+#word-display {
+    margin-bottom: 30px;
+    min-height: 100px;
+    /* Ensure space even if words are short */
+}
+
+#japanese-word {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#romaji-word {
+    font-size: 1.5em;
+    color: #555;
+    letter-spacing: 2px;
+    /* Make Romaji easier to read */
+}
+
+#typed-display {
+    font-size: 1.5em;
+    color: #008000;
+    /* Green for correctly typed part */
+    letter-spacing: 2px;
+    min-height: 1.5em;
+    /* Reserve space */
+}
+
+#sushi-lane {
+    position: relative;
+    height: 110px;
+    /* Replace background-color with a striped gradient */
+    background: repeating-linear-gradient(45deg,
+            #d3e9ff,
+            /* Light blue */
+            #d3e9ff 20px,
+            /* Light blue stripe width */
+            #c1a993 20px,
+            /* Brown stripe start */
+            #c1a993 40px
+            /* Brown stripe end (repeat width) */
+        );
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+    /* Ensure sushi doesn't visually spill out */
+}
+
+.sushi-item {
+    position: absolute;
+    left: -100px;
+    bottom: 5px;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes moveSushi {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(900px);
+    }
+}
+
+/* Shake animation for special effect */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+#start-screen {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#speed-selection {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#speed-selection label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#result-screen {
+    margin-top: 50px;
+}
+
+#start-button,
+#restart-button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#result-screen h2 {
+    color: red;
+}
+
+#force-end-button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ffcccc;
+    border: 1px solid #ffaaaa;
+    border-radius: 4px;
+}
+
+#force-end-button:hover {
+    background-color: #ffaaaa;
+}

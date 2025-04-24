@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイピング練習</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="stats-bar"> <!-- New Stats Bar -->
+            <span id="typed-keys">Typed: 0</span> |
+            <span id="mistakes">Mistakes: 0</span> |
+            <span id="kps">KPS: 0.00</span>
+        </div>
+        <div id="info-bar">
+            <div id="timer">Time: 300</div>
+            <div id="score">Score: 0</div>
+        </div>
+        <div id="word-display">
+            <div id="japanese-word">ここに日本語</div>
+            <div id="romaji-word">ここにローマ字</div>
+            <div id="typed-display"></div> <!-- To show what the user has typed -->
+        </div>
+        <div id="sushi-lane">
+            <!-- Sushi images will be added here by JavaScript -->
+        </div>
+        <button id="force-end-button" style="display: none;">強制終了</button>
+        <div id="start-screen">
+            <!-- Re-add Speed Selection -->
+            <div id="speed-selection">
+                <label>スピード:</label>
+                <label><input type="radio" name="sushi-speed" value="12" checked> ゆっくり</label>
+                <label><input type="radio" name="sushi-speed" value="9"> ふつう</label>
+                <label><input type="radio" name="sushi-speed" value="6"> はやく</label>
+            </div>
+            <button id="start-button">スタート</button>
+        </div>
+        <div id="result-screen" style="display: none;">
+            <h2>タイムアップ！</h2>
+            <p>最終スコア: <span id="final-score">0</span></p>
+            <button id="restart-button">もう一度プレイ</button>
+        </div>
+    </div>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
