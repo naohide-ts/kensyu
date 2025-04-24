@@ -121,47 +121,54 @@ function createSushi() {
     sushi.style.animationDuration = `${sushiAnimationDuration}s`;
 
     sushiLaneEl.appendChild(sushi);
-    activeSushi.push(sushi);
 
-    const timeoutId = setTimeout(() => {
-        // Check if the game is still active and the specific sushi element still exists
-        if (gameActive && sushi.parentNode === sushiLaneEl) {
-            console.log("--- Sushi Timeout Start ---"); // Log start
-            console.log("Sushi reached end - word failed!");
-            mistakes++;
-            updateStatsDisplay();
+    let timeoutId; // Declare timeoutId here
 
-            console.log("Calling displayWord()..."); // Log before displayWord
-            displayWord(); // Get and display the next word
-            console.log("displayWord() finished. New word:", currentWord?.ja); // Log after displayWord
+    const timeoutCallback = () => {
+        // Check 1: Is the game still running?
+        if (!gameActive) {
+            console.log("Sushi timeout ignored - game not active.");
+            if (sushi.parentNode === sushiLaneEl) sushiLaneEl.removeChild(sushi);
+            return;
+        }
+        // Check 2: Is this specific sushi element still visually present in the lane?
+        if (sushi.parentNode !== sushiLaneEl) {
+            console.log("Sushi timeout ignored - sushi element already removed (likely correct answer).");
+            return;
+        }
 
-            console.log("Calling clearAllSushi()..."); // Log before clear
-            clearAllSushi(); // Clear the timed-out sushi and any others (should only be one)
-            console.log("clearAllSushi() finished."); // Log after clear
+        // If we reach here, the game is active AND the sushi visually timed out.
+        console.log("--- Sushi Timeout Start ---");
+        console.log("Sushi reached end - word failed!");
+        mistakes++;
+        updateStatsDisplay();
 
-            console.log("Calling createSushi()..."); // Log before create
-            createSushi(); // Start a new sushi for the new word
-            console.log("createSushi() finished."); // Log after create
-            console.log("--- Sushi Timeout End ---"); // Log end
+        // Remove the timed-out sushi from the activeSushi array.
+        const sushiIndex = activeSushi.indexOf(sushi);
+        if (sushiIndex !== -1) {
+            activeSushi.splice(sushiIndex, 1);
         } else {
-            console.log("Sushi timeout ignored - game not active or sushi already removed.");
+            console.warn("Timed-out sushi was not found in activeSushi array, though it was in the DOM.");
         }
-    }, sushiAnimationDuration * 1000);
 
-    sushi.dataset.timeoutId = timeoutId;
+        console.log("Calling displayWord()...");
+        displayWord();
+        console.log("displayWord() finished. New word:", currentWord?.ja);
 
-    sushi.addEventListener('animationend', () => {
-        // If animation ends, it means timeout didn't fire or was cleared.
-        // We still need to remove the visual element if it exists.
-        console.log("Sushi animation ended.");
-        clearTimeout(sushi.dataset.timeoutId); // Ensure timeout is cleared
-        if (sushi.parentNode === sushiLaneEl) {
-            sushiLaneEl.removeChild(sushi);
-            // Update activeSushi array *only* if removing via animation end
-            // If removed by clearAllSushi, the array is already cleared.
-            activeSushi = activeSushi.filter(item => item !== sushi);
-        }
-    });
+        console.log("Calling clearAllSushi() to clear visuals and reset for next word...");
+        clearAllSushi(); // Clears visuals and resets activeSushi
+        console.log("clearAllSushi() finished.");
+
+        console.log("Calling createSushi() for the new word...");
+        createSushi(); // Start next sushi
+        console.log("createSushi() finished.");
+        console.log("--- Sushi Timeout End ---");
+    };
+
+    timeoutId = setTimeout(timeoutCallback, sushiAnimationDuration * 1000);
+    sushi.dataset.timeoutId = timeoutId; // Store the ID on the element
+
+    activeSushi.push(sushi); // Add to array *after* creating timeout and storing ID
 }
 
 function updateStatsDisplay() {
